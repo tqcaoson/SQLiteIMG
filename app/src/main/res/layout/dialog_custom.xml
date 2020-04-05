@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa đổi ảnh"
+        android:textColor="#EA1C1C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên ảnh"
+        android:id="@+id/editTextTenAnh"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mô tả"
+        android:id="@+id/editTextMoTa" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="6"
+            android:id="@+id/buttonCapNhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật"/>
+
+        <Button
+            android:layout_weight="4"
+            android:id="@+id/buttonHuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"/>
+
+    </LinearLayout>
+
+</LinearLayout>

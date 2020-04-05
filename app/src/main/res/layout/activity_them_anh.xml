@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#EC2121"
+        android:text="Thêm Ảnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextTenAnh"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nhập tên ảnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editTextMoTa"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập mô tả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/imageButtonCamera"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/camera_red"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewNoImage"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/no_image"
+            android:layout_width="240dp"
+            android:layout_height="230dp"/>
+
+        <ImageButton
+            android:scaleType="fitXY"
+            android:id="@+id/imageButtonOpenFolder"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/open_folder"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_marginLeft="70dp"
+            android:text="Thêm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonHuy"
+            android:layout_marginLeft="50dp"
+            android:text="Hủy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
